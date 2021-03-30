@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ movie.title }}</title>
+
+<body>
+            <div>
+                <video controls  src="{{ request.scheme }}://{{ request.get_host }}{{ movie.video.url }}"></video>
+                <h3>{{ movie.title }}</h3>
+                <h4>{{ movie.rate }}</h4>
+                <h4>{{ movie.duration }}</h4>
+            </div>
+
+   
+
+</body>
+</html>
